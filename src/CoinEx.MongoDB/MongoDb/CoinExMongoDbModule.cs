@@ -34,7 +34,7 @@ namespace CoinEx.MongoDB
 
             Configure<AbpUnitOfWorkDefaultOptions>(options =>
             {
-                options.TransactionBehavior = UnitOfWorkTransactionBehavior.Auto;
+                options.TransactionBehavior = UnitOfWorkTransactionBehavior.Disabled;
             });
         }
     }
